@@ -1,0 +1,50 @@
+import express from 'express'
+import morgan from 'morgan'
+i
+
+const app = express() //instancia express
+const PORT = 3000
+
+// const loger = (req, res, next) => {
+//   const { method, url } = req
+//   console.log(`se hiso una peticion del tipo ${method} en la ruta ${url}`)
+//   next()
+// }
+
+//app.use(loger)
+// app.use(morgan('tiny'))
+
+
+// app.get('/', (req, res, next) => {
+//   res.json({ messaje: 'soy un get' })
+// })
+// app.post('/', (req, res) => {
+//   res.status(200).json({ messaje: 'soy un post ' })
+// })
+// app.put('/', (req, res) => {
+//   res.status(200).json({ messaje: 'soy un put' })
+// })
+// app.delete('/', (req, res) => {
+//   res.status(200).json({ messaje: 'soy un delete ' })
+// })
+
+// app.get(
+//   '/',
+//   (req, res, next) => {
+//     console.log('mensaje 1')
+//     next()
+//   },
+//   (res, req, next) => {
+//     console.log('mensaje 2')
+//     next()
+//   },
+//   (req, res) => {
+//     res.json({ messaje: 'mensaje 3' })
+//     console.log('mensaje 3 , terminado')
+//   }
+// )
+
+//escuchador
+app.listen(PORT, () => {
+  console.log(` servidor corriendo en el puerto ${PORT}`)
+})
