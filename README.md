@@ -1,0 +1,1 @@
+Hola en este proyecto se creo un CRUD de usuarios simple con express, cuenta con controladores de ruta , sequelize como ORM , ahutenticacion , esta conectado a una base de datos de postgresSQL y trabage con Postman para probar los enpoids.
